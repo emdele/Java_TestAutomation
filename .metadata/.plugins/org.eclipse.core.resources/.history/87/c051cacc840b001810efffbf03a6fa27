@@ -1,0 +1,28 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestPage {
+	
+	@Before
+	public void methodNameOne(){
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\Desktop\\SELENIUM_CUCUMBER\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		
+		
+			}
+	@After
+	public void methodNameThree(){
+		System.out.println("Three");
+		
+	}
+	
+	@Test
+	public void methodNameTwo(){
+		System.out.println("Two");
+	}
+
+}

@@ -1,0 +1,68 @@
+package CucumberFramwork.stepsFiles;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login {
+	WebDriver driver;
+	
+	@Before
+	public void setup(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\SELENIUM_CUCUMBER\\chromedriver.exe"); 		 
+		this.driver = new ChromeDriver();	
+		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+		
+	
+	}
+	
+	@After
+	public void tearDown(){
+		//driver.manage().deleteAllCookies();
+		driver.quit();
+		driver.close();
+		
+	}
+	
+	
+	
+@Given("^user navigates to stack overflow account$")
+public void user_navigates_to_stack_overflow_account() throws Throwable {
+    System.out.println("Method1");
+}
+
+@And("^user click on login button on the homepage$")
+public void user_click_on_login_button_on_the_homepage() throws Throwable {
+	System.out.println("Method2");
+}
+
+@And("^user enters a valid username$")
+public void user_enters_a_valid_username() throws Throwable {
+	System.out.println("Method3");
+}
+
+@And("^user enters valid password$")
+public void user_enters_valid_password() throws Throwable {
+	System.out.println("Method4");
+}
+
+@When("^user click on the login button$")
+public void user_click_on_the_login_button() throws Throwable {
+	System.out.println("Method5");
+}
+
+@Then("^user should be on the home page$")
+public void user_should_be_on_the_home_page() throws Throwable {
+	System.out.println("Method6");
+}
+}
+

@@ -1,0 +1,18 @@
+
+public class LearningJava {
+
+	public static void main(String[] args) {
+		myFirstMethod("John");
+		myFirstMethod("Mark");
+		myFirstMethod("Less");
+		myFirstMethod("Tom");
+	
+
+	}
+	
+	public static void myFirstMethod(String name){
+		System.out.println("Hello World " + name);
+		
+	}
+
+}

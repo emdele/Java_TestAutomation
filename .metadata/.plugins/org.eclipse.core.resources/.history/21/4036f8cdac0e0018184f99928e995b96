@@ -1,0 +1,19 @@
+
+public class LearningJava {
+
+	public static void main(String[] args) {
+		testingPractice();
+		testingPractice();
+		testingPractice();
+		testingPractice();
+		
+	
+		}
+	
+		public static void testingPractice() {
+			System.out.println("hello world");
+			
+	
+
+	}
+}

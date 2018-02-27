@@ -1,0 +1,27 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class JUnitTest {
+	
+	WebDriver driver;
+	
+	@Before
+	public void Url(){
+		System.out.println("Hello world");
+		
+	}
+	
+	
+	@After
+	public void CloseDown(){
+		System.out.println("Hello world");
+	}
+	
+	
+	@Test
+	public void BodyTest(){
+		System.out.println("Hello world");
+	}
+
+}

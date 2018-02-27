@@ -1,0 +1,40 @@
+package CucumberFramwork.stepsFiles;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login {
+
+@Given("^user navigates to stack overflow account$")
+public void user_navigates_to_stack_overflow_account() throws Throwable {
+    System.out.println("Method1");
+}
+
+@And("^user click on login button on the homepage$")
+public void user_click_on_login_button_on_the_homepage() throws Throwable {
+	System.out.println("Method2");
+}
+
+@And("^user enters a valid username$")
+public void user_enters_a_valid_username() throws Throwable {
+	System.out.println("Method3");
+}
+
+@And("^user enters valid password$")
+public void user_enters_valid_password() throws Throwable {
+	System.out.println("Method4");
+}
+
+@When("^user click on the login button$")
+public void user_click_on_the_login_button() throws Throwable {
+	System.out.println("Method5");
+}
+
+@Then("^user should be on the home page$")
+public void user_should_be_on_the_home_page() throws Throwable {
+	System.out.println("Method6");
+}
+}
+

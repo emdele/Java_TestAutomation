@@ -1,0 +1,14 @@
+
+public class LearningJava {
+
+	public static void main(String[] args) {
+		
+		Student mark = new Student();
+		mark.name = "Mark";
+		mark.surname = "Smith";
+		int x = mark.id = 20;
+		mark.age = 25;
+	System.out.println(x);
+	}
+
+}

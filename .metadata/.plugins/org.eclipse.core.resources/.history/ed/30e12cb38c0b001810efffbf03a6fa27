@@ -1,0 +1,15 @@
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
+
+public class JUnit {
+
+	public static void main(String[] args) {
+		System.setProperty ("webdriver.gecko.driver", "C:\\Users\\user\\Desktop\\SELENIUM_CUCUMBER\\geckodriver.exe");
+		
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.epiphanysearch.co.uk/");
+	}
+
+}

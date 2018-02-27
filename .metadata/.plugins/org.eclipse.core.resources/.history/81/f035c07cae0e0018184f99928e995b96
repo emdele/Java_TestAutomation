@@ -1,0 +1,19 @@
+
+public class LearningJava {
+
+	public static void main(String[] args) {
+		testingPractice("Toyota");
+		testingPractice("Mazda");
+		testingPractice("Kia");
+		testingPractice("Volvo");
+		
+	
+		}
+	
+		public static void testingPractice(String carType) {
+			System.out.println("hello world " + carType + " is my choice of car for now");
+			
+	
+
+	}
+}

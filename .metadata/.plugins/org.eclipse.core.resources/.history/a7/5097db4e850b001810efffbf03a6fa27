@@ -1,0 +1,30 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestPage {
+	WebDriver driver;
+	
+	@Before
+	public void methodNameOne(){
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\Desktop\\SELENIUM_CUCUMBER\\chromedriver.exe");
+		 driver = new ChromeDriver();
+		
+		
+		
+			}
+	@After
+	public void methodNameThree(){
+		System.out.println("Three");
+		driver.close();
+		
+	}
+	
+	@Test
+	public void methodNameTwo(){
+		driver.get("https://www.epiphanysearch.co.uk/");
+	}
+
+}
